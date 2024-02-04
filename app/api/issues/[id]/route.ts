@@ -1,6 +1,6 @@
 import { issueSchema } from "@/app/validationSchemas";
-import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/client";
+import { NextRequest, NextResponse } from "next/server";
 
 // interface Props {
 //     params: {id: number}
@@ -36,6 +36,7 @@ export async function DELETE(
   request: NextRequest,
   { params }: { params: { id: string } }
 ) {
+  // await delay(2000);
   const issue = await prisma.issue.findUnique({
     where: { id: parseInt(params.id) },
   });
