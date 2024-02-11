@@ -27,7 +27,7 @@ const Pagination = ({ itemsCount, pageSize, currentPage }: Props) => {
   };
 
   const pageCount = Math.ceil(itemsCount / pageSize);
-  if (currentPage <= 1) return null;
+  //   if (currentPage <= 1) return null;
 
   return (
     <Flex align="center" gap="2">
