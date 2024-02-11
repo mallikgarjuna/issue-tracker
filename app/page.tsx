@@ -1,3 +1,4 @@
+import IssueChart from "./IssueChart";
 import IssueSummary from "./IssueSummary";
 import LatestIssues from "./LatestIssues";
 import Pagination from "./components/Pagination";
@@ -14,7 +15,8 @@ export default async function Home() {
     <>
       <div>Hello World</div>
       {/* <LatestIssues /> */}
-      <IssueSummary open={open} inprogress={inprogress} closed={closed} />
+      {/* <IssueSummary open={open} inprogress={inprogress} closed={closed} /> */}
+      <IssueChart open={open} inprogress={inprogress} closed={closed} />
     </>
   );
 }
